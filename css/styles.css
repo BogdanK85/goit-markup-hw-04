@@ -27,7 +27,7 @@ p {
     margin: 0;
 }
 
-ul   {
+ul, li   {
     margin: 0;
     padding-left: 0;
 }
@@ -63,6 +63,8 @@ body {
 
 .link {
     text-decoration: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .container {
     max-width: 1158px;
@@ -234,6 +236,7 @@ body {
     height: 112px;
     outline: 1px solid red;
 } */
+
 .feature-item-icon {
     display: flex;
     align-items: center;
@@ -341,6 +344,9 @@ body {
     letter-spacing: 0.02em;
     color: var(--navy-blue-color);
 }
+.worker-position {
+    margin-bottom: 8px;
+}
 .link-icon {
     display: inline-block;
 }
@@ -354,7 +360,29 @@ body {
     background-position: center;
     background-color: teal;
     border-radius: 50%;
-    
+}
+.media-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 232px;
+    height: 40px;
+    padding: 0;
+    gap: 24px;
+}
+.media-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--iris-color);
+}
+.media-icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--cloud-color);
 }
 
 /* ======= Section 5 ======= */
@@ -400,7 +428,45 @@ body {
     padding-bottom: 100px;
     background-color: var(--white-color);
 }
+.footer-box {
+    display: flex;
+    gap: 120px;
+}
 
+.footer-media-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    color: var(--white-color);
+}
+.footer-media-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 208px;
+    height: 40px;
+    padding: 0;
+    gap: 16px;
+}
+.footer-media-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--iris-color);
+    outline: 1px solid red;
+}
+.footer-media-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--cloud-color);
+}
 .footer-item {
     max-width: 264px;
     margin-top: 16px;
@@ -452,10 +518,12 @@ body {
     color: var(--white-color);
     background-color: var(--ocean-color);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-item:hover,
-.filter-item:focus,
+.filter-item:focus, 
+
 
 .filter-projects-list {
     display: flex;
@@ -473,6 +541,10 @@ body {
     width: 360px;
     height: 420px;
     background-color: var(--white-color);
+}
+.project-item:hover,
+.project-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .project-title {
     margin-bottom: 8px;
