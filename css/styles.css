@@ -55,6 +55,8 @@ body {
 }
 
 .list {
+    margin: 0;
+    padding: 0;
     list-style: none;
     font-style: normal;
     line-height: 1.5;
@@ -347,10 +349,10 @@ body {
 .worker-position {
     margin-bottom: 8px;
 }
-.link-icon {
+/* .link-icon {
     display: inline-block;
-}
-.link-icon .icon {
+} */
+/* .link-icon .icon {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -360,7 +362,7 @@ body {
     background-position: center;
     background-color: teal;
     border-radius: 50%;
-}
+} */
 .media-list {
     display: flex;
     flex-direction: row;
@@ -368,7 +370,12 @@ body {
     width: 232px;
     height: 40px;
     padding: 0;
+    margin: 0;
     gap: 24px;
+}
+.media-item:hover,
+.media-item:focus {
+    background-color: var(--ocean-color);
 }
 .media-item {
     display: flex;
@@ -380,6 +387,9 @@ body {
     background-color: var(--iris-color);
 }
 .media-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 16px;
     height: 16px;
     fill: var(--cloud-color);
@@ -417,10 +427,18 @@ body {
     margin: 0;
 }
 .client-logo-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 104px;
     max-height: 56px;
     background-repeat: no-repeat;
     background-position: center ;
+    fill: var(--light-slate-color);
+}
+.client-logo-icon:hover,
+.client-logo-icon:focus {
+    fill: var(--ocean-color);
 }
 /* ======= Footer ======= */
 .footer {
@@ -449,6 +467,7 @@ body {
     align-items: flex-start;
     width: 208px;
     height: 40px;
+    margin: 0;
     padding: 0;
     gap: 16px;
 }
@@ -456,15 +475,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: var(--iris-color);
     outline: 1px solid red;
 }
+.footer-media-item:hover,
+.footer-media-item:focus {
+    background-color: var(--green-color);
+}
 .footer-media-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 24px;
     height: 24px;
+    margin: 0;
     fill: var(--cloud-color);
 }
 .footer-item {
